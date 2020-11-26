@@ -30,6 +30,7 @@ public class DemoMod
     {
         logger = event.getModLog();
         proxy.preInit(event);
+
         //ModItems.init();
     }
 

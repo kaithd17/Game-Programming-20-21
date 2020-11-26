@@ -1,13 +1,17 @@
 package com.example.demomod.proxy;
 
 import com.example.demomod.DemoMod;
+import com.example.demomod.init.BiomeInit;
 import com.example.demomod.items.DiamondSwordItem;
 import com.example.demomod.items.LightSaberBlueItem;
 import com.example.demomod.items.LightSaberStickItem;
 import com.example.demomod.items.RedSaberCrystalItem;
+import com.example.demomod.world.types.WorldTypeDesert;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraft.world.WorldType;
+import net.minecraft.world.biome.Biome;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
@@ -16,6 +20,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod.EventBusSubscriber(modid = DemoMod.MODID)
 public class CommonProxy {
@@ -25,14 +30,22 @@ public class CommonProxy {
     public static Item RedSaberCrystal = new RedSaberCrystalItem("redsabercrystal");
     public static Item LightSaberStick = new LightSaberStickItem("lightsaberstick");
 
-    public void preInit(FMLPreInitializationEvent evt){ }
+    public void preInit(FMLPreInitializationEvent evt){
+        //ModDimensions.init();
+        //GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
+        BiomeInit.registerBiomes();
+        //System.out.println("registerBiomes finished");
+    }
     public void init(FMLInitializationEvent evt){ }
-    public void postInit(FMLPostInitializationEvent evt){ }
+    public void postInit(FMLPostInitializationEvent evt){
+        WorldType STAR_WARS = new WorldTypeDesert();
+    }
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event){
 
     }
+
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event){
@@ -40,6 +53,7 @@ public class CommonProxy {
         event.getRegistry().registerAll(LightSaberBlue);
         event.getRegistry().registerAll(RedSaberCrystal);
         event.getRegistry().registerAll(LightSaberStick);
+        //BiomeInit.registerBiomes();
     }
 
     @SubscribeEvent
