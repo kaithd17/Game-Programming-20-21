@@ -8,7 +8,7 @@ import net.minecraft.world.biome.BiomeProviderSingle;
 
 public class WorldTypeDesert extends WorldType {
     public WorldTypeDesert() {
-        super("Desert");
+        super("Star_Wars");
     }
 
     @Override

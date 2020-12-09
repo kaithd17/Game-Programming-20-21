@@ -2,10 +2,13 @@ package com.example.demomod.proxy;
 
 import com.example.demomod.DemoMod;
 import com.example.demomod.init.BiomeInit;
+import com.example.demomod.init.EntityInit;
 import com.example.demomod.items.DiamondSwordItem;
 import com.example.demomod.items.LightSaberBlueItem;
 import com.example.demomod.items.LightSaberStickItem;
 import com.example.demomod.items.RedSaberCrystalItem;
+import com.example.demomod.util.RenderHandler;
+import com.example.demomod.util.SoundHandler;
 import com.example.demomod.world.types.WorldTypeDesert;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -34,6 +37,10 @@ public class CommonProxy {
         //ModDimensions.init();
         //GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
         BiomeInit.registerBiomes();
+        //
+        EntityInit.registerEntities();
+        RenderHandler.registerEntityRenders();
+        SoundHandler.registerSounds();
         //System.out.println("registerBiomes finished");
     }
     public void init(FMLInitializationEvent evt){ }
