@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "R",
+    "R",
+    "S"
+  ],
+  "key": {
+    "R": {
+      "item": "demomod:greensabercrystal"
+    },
+    "S": {
+      "item": "demomod:lightsaberstick"
+    }
+  },
+  "result": {
+    "item": "demomod:lightsaberjedigreen",
+    "count": 1
+  }
+}

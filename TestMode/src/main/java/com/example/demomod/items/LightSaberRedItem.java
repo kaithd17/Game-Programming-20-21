@@ -1,10 +1,9 @@
 package com.example.demomod.items;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 
-public class LightSaberBlueItem extends net.minecraft.item.ItemSword {
-    public LightSaberBlueItem(ToolMaterial material, String name){
+public class LightSaberRedItem extends net.minecraft.item.ItemSword{
+    public LightSaberRedItem(ToolMaterial material, String name){
         super(material);
         setUnlocalizedName(name);
         setRegistryName(name);

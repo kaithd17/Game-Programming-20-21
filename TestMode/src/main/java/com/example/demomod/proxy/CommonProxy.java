@@ -1,21 +1,25 @@
 package com.example.demomod.proxy;
 
 import com.example.demomod.DemoMod;
+import com.example.demomod.blocks.DuraplastBlock;
 import com.example.demomod.init.BiomeInit;
 import com.example.demomod.init.EntityInit;
-import com.example.demomod.items.DiamondSwordItem;
-import com.example.demomod.items.LightSaberBlueItem;
-import com.example.demomod.items.LightSaberStickItem;
-import com.example.demomod.items.RedSaberCrystalItem;
+import com.example.demomod.items.*;
 import com.example.demomod.util.RenderHandler;
 import com.example.demomod.util.SoundsHandler;
 import com.example.demomod.world.types.WorldTypeDesert;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.init.SoundEvents;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemSword;
 import net.minecraft.world.WorldType;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -26,10 +30,28 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Mod.EventBusSubscriber(modid = DemoMod.MODID)
 public class CommonProxy {
 
+    public static final Item.ToolMaterial MATERIAL_LIGHTSABER = EnumHelper.addToolMaterial("material_lightsaber",5,2000, 15.0F,20.0F,10);
+    public static final ItemArmor.ArmorMaterial DURAPLAST_MATERIAL = EnumHelper.addArmorMaterial("DURAPLAST",DemoMod.MODID + ":duraplast",17,new int[]{4,7,8,4},11, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,0.0F);
+    //Items
+    //Swords
+    public static ItemSword LightSaberBlue = new LightSaberBlueItem(MATERIAL_LIGHTSABER,"lightsaberjedi");
+    public static ItemSword LightSaberGreen = new LightSaberGreenItem(MATERIAL_LIGHTSABER,"lightsaberjedigreen");
+    public static ItemSword LightSaberRed = new LightSaberRedItem(MATERIAL_LIGHTSABER,"lightsabersith");
     public static Item DiamondSword = new DiamondSwordItem("diamondsword");
-    public static Item LightSaberBlue = new LightSaberBlueItem("lightsaberjedi");
+    //Crystals
     public static Item RedSaberCrystal = new RedSaberCrystalItem("redsabercrystal");
+    public static Item BlueSaberCrystal = new BlueSaberCrystalItem("bluesabercrystal");
+    public static Item GreenSaberCrystal = new GreenSaberCrystalItem("greensabercrystal");
+    //other Items
     public static Item LightSaberStick = new LightSaberStickItem("lightsaberstick");
+    public static Item Duraplast = new DuraplastItem("duraplast");
+    //Blocks
+    public static Block DuraplastBlock = new DuraplastBlock("duraplastoreblock");
+    //Armor
+    public static ItemArmor DuraplastChestplate = new DuraplastArmor(CommonProxy.DURAPLAST_MATERIAL, EntityEquipmentSlot.CHEST,"duraplastchestplate");
+    public static ItemArmor DuraplastLegs = new DuraplastArmor(CommonProxy.DURAPLAST_MATERIAL, EntityEquipmentSlot.LEGS, "duraplastlegs");
+    public static ItemArmor DuraplastHelmet = new DuraplastArmor(CommonProxy.DURAPLAST_MATERIAL,EntityEquipmentSlot.HEAD, "duraplasthelmet");
+    public static ItemArmor DuraplastBoots = new DuraplastArmor(CommonProxy.DURAPLAST_MATERIAL,EntityEquipmentSlot.FEET, "duraplastboots");
 
     public void preInit(FMLPreInitializationEvent evt){
         //ModDimensions.init();
@@ -51,8 +73,8 @@ public class CommonProxy {
     }
 
     @SubscribeEvent
-    public static void registerBlocks(RegistryEvent.Register<Block> event){
-
+    public static void registerBlocks(RegistryEvent.Register<Block> event) {
+        event.getRegistry().registerAll(DuraplastBlock);
     }
 
 
@@ -62,7 +84,20 @@ public class CommonProxy {
         event.getRegistry().registerAll(LightSaberBlue);
         event.getRegistry().registerAll(RedSaberCrystal);
         event.getRegistry().registerAll(LightSaberStick);
-        //BiomeInit.registerBiomes();
+        event.getRegistry().registerAll(BlueSaberCrystal);
+        event.getRegistry().registerAll(GreenSaberCrystal);
+        event.getRegistry().registerAll(LightSaberGreen);
+        event.getRegistry().registerAll(LightSaberRed);
+        event.getRegistry().registerAll(Duraplast);
+        event.getRegistry().registerAll(DuraplastChestplate);
+        event.getRegistry().registerAll(DuraplastBoots);
+        event.getRegistry().registerAll(DuraplastHelmet);
+        event.getRegistry().registerAll(DuraplastLegs);
+    }
+
+    @SubscribeEvent
+    public static void registerItemBlocks(RegistryEvent.Register<Item> event){
+        event.getRegistry().register(new ItemBlock(DuraplastBlock).setRegistryName(DuraplastBlock.getRegistryName()));
     }
 
     @SubscribeEvent
@@ -71,6 +106,16 @@ public class CommonProxy {
         registerRender(LightSaberBlue);
         registerRender(RedSaberCrystal);
         registerRender(LightSaberStick);
+        registerRender(BlueSaberCrystal);
+        registerRender(GreenSaberCrystal);
+        registerRender(LightSaberGreen);
+        registerRender(LightSaberRed);
+        registerRender(Duraplast);
+        registerRender(DuraplastChestplate);
+        registerRender(DuraplastLegs);
+        registerRender(DuraplastBoots);
+        registerRender(DuraplastHelmet);
+        registerRender(Item.getItemFromBlock(DuraplastBlock));
     }
 
     private static void registerRender(Item item){

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDD",
+    "D D",
+    "D D"
+  ],
+  "key": {
+    "D": {
+      "item": "demomod:duraplast"
+    }
+  },
+  "result": {
+    "item": "demomod:duraplastlegs",
+    "count": 1
+  }
+}
+

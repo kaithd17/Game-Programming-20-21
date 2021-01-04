@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "R",
+    "R",
+    "S"
+  ],
+  "key": {
+    "R": {
+      "item": "demomod:bluesabercrystal"
+    },
+    "S": {
+      "item": "demomod:lightsaberstick"
+    }
+  },
+  "result": {
+    "item": "demomod:lightsaberjedi",
+    "count": 1
+  }
+}
+
