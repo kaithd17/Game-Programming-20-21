@@ -1,0 +1,14 @@
+{
+  "entity.sithlord.hurt":
+  {
+    "category": "entity",
+    "subtitle": "entity.sithlord.hurt",
+    "sounds": [{"name": "demomod:entity/sithlord/hurt", "stream": true}]
+  },
+  "entity.sithlord.death":
+  {
+    "category": "entity",
+    "subtitle": "entity.sithlord.death",
+    "sounds": [{"name": "demomod:entity/sithlord/death", "stream": true}]
+  }
+}

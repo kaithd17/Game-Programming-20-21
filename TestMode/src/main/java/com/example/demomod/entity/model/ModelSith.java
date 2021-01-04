@@ -5,10 +5,13 @@ package com.example.demomod.entity.model;
 // Paste this class into your mod and generate all required imports
 
 
+import com.example.demomod.DemoMod;
+import com.example.demomod.items.LightSaberBlueItem;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.MathHelper;
 
 public class ModelSith extends ModelBase {
@@ -20,9 +23,13 @@ public class ModelSith extends ModelBase {
     private final ModelRenderer leftLeg;
     private final ModelRenderer rightLeg;
 
+
+
+
     public ModelSith() {
         textureWidth = 64;
         textureHeight = 64;
+
 
         head = new ModelRenderer(this);
         head.setRotationPoint(0.0F, 0.0F, 0.0F);
@@ -48,10 +55,6 @@ public class ModelSith extends ModelBase {
         rightLeg.setRotationPoint(1.9F, 12.0F, 0.0F);
         rightLeg.cubeList.add(new ModelBox(rightLeg, 0, 16, -2.0F, 0.0F, -2.0F, 4, 12, 4, 0.0F, true));
 
-
-
-
-
     }
 
     @Override
@@ -72,10 +75,14 @@ public class ModelSith extends ModelBase {
 
     @Override
     public void setRotationAngles(float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch, float scaleFactor, Entity entityIn) {
-        this.leftLeg.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F)*1.4F*limbSwingAmount;
+        this.leftLeg.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F)*1.4F*limbSwingAmount*(-1);
         this.rightLeg.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F)*1.4F*limbSwingAmount;
+        this.leftArm.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F)*1.4F*limbSwingAmount*(-1);
+        this.rightArm.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F)*1.4F*limbSwingAmount;
 
         this.head.rotateAngleY = netHeadYaw * 0.017453292F;
         this.head.rotateAngleX = headPitch * 0.017453292F;
     }
+
+
 }

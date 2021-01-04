@@ -8,13 +8,12 @@ import com.example.demomod.items.LightSaberBlueItem;
 import com.example.demomod.items.LightSaberStickItem;
 import com.example.demomod.items.RedSaberCrystalItem;
 import com.example.demomod.util.RenderHandler;
-import com.example.demomod.util.SoundHandler;
+import com.example.demomod.util.SoundsHandler;
 import com.example.demomod.world.types.WorldTypeDesert;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.world.WorldType;
-import net.minecraft.world.biome.Biome;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
@@ -23,7 +22,6 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod.EventBusSubscriber(modid = DemoMod.MODID)
 public class CommonProxy {
@@ -38,12 +36,16 @@ public class CommonProxy {
         //GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
         BiomeInit.registerBiomes();
         //
+        SoundsHandler.registerSounds();
+
         EntityInit.registerEntities();
         RenderHandler.registerEntityRenders();
-        SoundHandler.registerSounds();
+
         //System.out.println("registerBiomes finished");
     }
-    public void init(FMLInitializationEvent evt){ }
+    public void init(FMLInitializationEvent evt){
+
+    }
     public void postInit(FMLPostInitializationEvent evt){
         WorldType STAR_WARS = new WorldTypeDesert();
     }
