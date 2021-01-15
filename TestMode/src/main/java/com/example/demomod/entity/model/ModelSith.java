@@ -6,7 +6,6 @@ package com.example.demomod.entity.model;
 
 
 import com.example.demomod.DemoMod;
-import com.example.demomod.items.LightSaberBlueItem;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelRenderer;

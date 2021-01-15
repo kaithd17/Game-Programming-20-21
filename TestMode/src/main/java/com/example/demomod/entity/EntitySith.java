@@ -2,7 +2,6 @@
 package com.example.demomod.entity;
 
 import com.example.demomod.entity.model.ModelSith;
-import com.example.demomod.items.LightSaberBlueItem;
 import com.example.demomod.util.SoundsHandler;
 import net.minecraft.entity.IEntityLivingData;
 import net.minecraft.entity.SharedMonsterAttributes;

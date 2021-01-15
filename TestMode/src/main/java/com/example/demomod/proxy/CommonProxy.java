@@ -34,14 +34,13 @@ public class CommonProxy {
     public static final ItemArmor.ArmorMaterial DURAPLAST_MATERIAL = EnumHelper.addArmorMaterial("DURAPLAST",DemoMod.MODID + ":duraplast",17,new int[]{4,7,8,4},11, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,0.0F);
     //Items
     //Swords
-    public static ItemSword LightSaberBlue = new LightSaberBlueItem(MATERIAL_LIGHTSABER,"lightsaberjedi");
-    public static ItemSword LightSaberGreen = new LightSaberGreenItem(MATERIAL_LIGHTSABER,"lightsaberjedigreen");
-    public static ItemSword LightSaberRed = new LightSaberRedItem(MATERIAL_LIGHTSABER,"lightsabersith");
-    public static Item DiamondSword = new DiamondSwordItem("diamondsword");
+    public static ItemSword LightSaberBlue = new LightSaberItem(MATERIAL_LIGHTSABER,"lightsaberjedi");
+    public static ItemSword LightSaberGreen = new LightSaberItem(MATERIAL_LIGHTSABER,"lightsaberjedigreen");
+    public static ItemSword LightSaberRed = new LightSaberItem(MATERIAL_LIGHTSABER,"lightsabersith");
     //Crystals
-    public static Item RedSaberCrystal = new RedSaberCrystalItem("redsabercrystal");
-    public static Item BlueSaberCrystal = new BlueSaberCrystalItem("bluesabercrystal");
-    public static Item GreenSaberCrystal = new GreenSaberCrystalItem("greensabercrystal");
+    public static Item RedSaberCrystal = new SaberCrystalItem("redsabercrystal");
+    public static Item BlueSaberCrystal = new SaberCrystalItem("bluesabercrystal");
+    public static Item GreenSaberCrystal = new SaberCrystalItem("greensabercrystal");
     //other Items
     public static Item LightSaberStick = new LightSaberStickItem("lightsaberstick");
     public static Item Duraplast = new DuraplastItem("duraplast");
@@ -80,7 +79,6 @@ public class CommonProxy {
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event){
-        event.getRegistry().registerAll(DiamondSword);
         event.getRegistry().registerAll(LightSaberBlue);
         event.getRegistry().registerAll(RedSaberCrystal);
         event.getRegistry().registerAll(LightSaberStick);
@@ -102,7 +100,6 @@ public class CommonProxy {
 
     @SubscribeEvent
     public static void registerRenders(ModelRegistryEvent event){
-        registerRender(DiamondSword);
         registerRender(LightSaberBlue);
         registerRender(RedSaberCrystal);
         registerRender(LightSaberStick);
