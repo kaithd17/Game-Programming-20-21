@@ -12,10 +12,7 @@ import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemArmor;
-import net.minecraft.item.ItemBlock;
-import net.minecraft.item.ItemSword;
+import net.minecraft.item.*;
 import net.minecraft.world.WorldType;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
@@ -26,17 +23,18 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod.EventBusSubscriber(modid = DemoMod.MODID)
 public class CommonProxy {
 
-    public static final Item.ToolMaterial MATERIAL_LIGHTSABER = EnumHelper.addToolMaterial("material_lightsaber",5,2000, 15.0F,20.0F,10);
+    public static final Item.ToolMaterial MATERIAL_LIGHTSABER = EnumHelper.addToolMaterial("material_lightsaber",3,2000, 2.0f,10.0f,4);
     public static final ItemArmor.ArmorMaterial DURAPLAST_MATERIAL = EnumHelper.addArmorMaterial("DURAPLAST",DemoMod.MODID + ":duraplast",17,new int[]{4,7,8,4},11, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,0.0F);
     //Items
     //Swords
-    public static ItemSword LightSaberBlue = new LightSaberItem(MATERIAL_LIGHTSABER,"lightsaberjedi");
-    public static ItemSword LightSaberGreen = new LightSaberItem(MATERIAL_LIGHTSABER,"lightsaberjedigreen");
-    public static ItemSword LightSaberRed = new LightSaberItem(MATERIAL_LIGHTSABER,"lightsabersith");
+    public static ItemSword LightSaberBlue = new LightSaberBlueItem(MATERIAL_LIGHTSABER,"lightsaberjedi");
+    public static ItemSword LightSaberGreen = new LightSaberGreenItem(MATERIAL_LIGHTSABER,"lightsaberjedigreen");
+    public static ItemSword LightSaberRed = new LightSaberRedItem(MATERIAL_LIGHTSABER,"lightsabersith");
     //Crystals
     public static Item RedSaberCrystal = new SaberCrystalItem("redsabercrystal");
     public static Item BlueSaberCrystal = new SaberCrystalItem("bluesabercrystal");
@@ -65,7 +63,7 @@ public class CommonProxy {
         //System.out.println("registerBiomes finished");
     }
     public void init(FMLInitializationEvent evt){
-
+        GameRegistry.addSmelting(DuraplastBlock, new ItemStack(Duraplast), 0.7f);
     }
     public void postInit(FMLPostInitializationEvent evt){
         WorldType STAR_WARS = new WorldTypeDesert();
