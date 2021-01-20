@@ -11,3 +11,6 @@ item.duraplastchestplate.name=Duraplast Chestplate
 item.duraplastlegs.name=Duraplast Legs
 item.duraplastboots.name=Duraplast Boots
 item.duraplasthelmet.name=Duraplast Helmet
+tile.duraplastoreblock.name=Duraplast Ore
+entity.RedStormtrooper.name=Red Stormtrooper
+entity.Sithlord.name= Sith Lord

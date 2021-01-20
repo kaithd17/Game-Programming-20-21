@@ -21,7 +21,7 @@ public class LightSaberBlueItem extends net.minecraft.item.ItemSword {
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
         playerIn.addPotionEffect(new PotionEffect(MobEffects.SPEED,300,1));
-        playerIn.getCooldownTracker().setCooldown(this,3000);
+        playerIn.getCooldownTracker().setCooldown(this,1500);
         return super.onItemRightClick(worldIn, playerIn, handIn);
     }
 }

@@ -28,7 +28,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 @Mod.EventBusSubscriber(modid = DemoMod.MODID)
 public class CommonProxy {
 
-    public static final Item.ToolMaterial MATERIAL_LIGHTSABER = EnumHelper.addToolMaterial("material_lightsaber",3,2000, 2.0f,10.0f,4);
+    public static final Item.ToolMaterial MATERIAL_LIGHTSABER = EnumHelper.addToolMaterial("material_lightsaber",3,2000, 2.0f,5.0f,4);
     public static final ItemArmor.ArmorMaterial DURAPLAST_MATERIAL = EnumHelper.addArmorMaterial("DURAPLAST",DemoMod.MODID + ":duraplast",17,new int[]{4,7,8,4},11, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,0.0F);
     //Items
     //Swords
@@ -36,12 +36,12 @@ public class CommonProxy {
     public static ItemSword LightSaberGreen = new LightSaberGreenItem(MATERIAL_LIGHTSABER,"lightsaberjedigreen");
     public static ItemSword LightSaberRed = new LightSaberRedItem(MATERIAL_LIGHTSABER,"lightsabersith");
     //Crystals
-    public static Item RedSaberCrystal = new SaberCrystalItem("redsabercrystal");
-    public static Item BlueSaberCrystal = new SaberCrystalItem("bluesabercrystal");
-    public static Item GreenSaberCrystal = new SaberCrystalItem("greensabercrystal");
+    public static Item RedSaberCrystal = new StarWarsItem("redsabercrystal");
+    public static Item BlueSaberCrystal = new StarWarsItem("bluesabercrystal");
+    public static Item GreenSaberCrystal = new StarWarsItem("greensabercrystal");
     //other Items
-    public static Item LightSaberStick = new LightSaberStickItem("lightsaberstick");
-    public static Item Duraplast = new DuraplastItem("duraplast");
+    public static Item LightSaberStick = new StarWarsItem("lightsaberstick");
+    public static Item Duraplast = new StarWarsItem("duraplast");
     //Blocks
     public static Block DuraplastBlock = new DuraplastBlock("duraplastoreblock");
     //Armor
