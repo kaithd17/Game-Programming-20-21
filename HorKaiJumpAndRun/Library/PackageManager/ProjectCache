@@ -1,19 +1,19 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/HTL-Kaindorf/4DHIF/Game-Programming-20-21/HorKaiJumpAndRun/Packages/manifest.json
+    m_FilePath: C:/Users/Matthias/Desktop/Schule/4.Klasse/Game Programming/Game-Programming-20-21/HorKaiJumpAndRun/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637498440998966917
-    m_Hash: 4004326711
+      ticks: 637498446245975739
+    m_Hash: 2999364598
   m_LockFileStatus:
-    m_FilePath: C:/HTL-Kaindorf/4DHIF/Game-Programming-20-21/HorKaiJumpAndRun/Packages/packages-lock.json
+    m_FilePath: C:/Users/Matthias/Desktop/Schule/4.Klasse/Game Programming/Game-Programming-20-21/HorKaiJumpAndRun/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637498442912855868
+      ticks: 637498450735596810
     m_Hash: 157013556
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -25,7 +25,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 5.0.3
       source: 1
-      resolvedPath: C:\HTL-Kaindorf\4DHIF\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.2d.animation@5.0.3
+      resolvedPath: C:\Users\Matthias\Desktop\Schule\4.Klasse\Game Programming\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.2d.animation@5.0.3
       assetPath: Packages/com.unity.2d.animation
       name: com.unity.2d.animation
       displayName: 2D Animation
@@ -86,6 +86,7 @@ m_PackageAssets:
         - 4.2.4
         - 4.2.5
         - 4.2.6
+        - 4.2.8
         - 5.0.0
         - 5.0.1
         - 5.0.2
@@ -152,7 +153,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 4.0.1
       source: 1
-      resolvedPath: C:\HTL-Kaindorf\4DHIF\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.2d.pixel-perfect@4.0.1
+      resolvedPath: C:\Users\Matthias\Desktop\Schule\4.Klasse\Game Programming\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.2d.pixel-perfect@4.0.1
       assetPath: Packages/com.unity.2d.pixel-perfect
       name: com.unity.2d.pixel-perfect
       displayName: 2D Pixel Perfect
@@ -224,7 +225,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 4.0.2
       source: 1
-      resolvedPath: C:\HTL-Kaindorf\4DHIF\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.2d.psdimporter@4.0.2
+      resolvedPath: C:\Users\Matthias\Desktop\Schule\4.Klasse\Game Programming\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.2d.psdimporter@4.0.2
       assetPath: Packages/com.unity.2d.psdimporter
       name: com.unity.2d.psdimporter
       displayName: 2D PSD Importer
@@ -267,6 +268,7 @@ m_PackageAssets:
         - 3.1.4
         - 3.1.5
         - 3.1.6
+        - 3.1.7
         - 4.0.0
         - 4.0.1
         - 4.0.2
@@ -382,7 +384,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 5.1.0
       source: 1
-      resolvedPath: C:\HTL-Kaindorf\4DHIF\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.2d.spriteshape@5.1.0
+      resolvedPath: C:\Users\Matthias\Desktop\Schule\4.Klasse\Game Programming\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.2d.spriteshape@5.1.0
       assetPath: Packages/com.unity.2d.spriteshape
       name: com.unity.2d.spriteshape
       displayName: 2D SpriteShape
@@ -437,6 +439,7 @@ m_PackageAssets:
         - 4.1.2
         - 4.1.3
         - 4.1.4
+        - 4.1.5
         - 5.0.0
         - 5.0.1
         - 5.0.2
@@ -557,7 +560,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.3.9
       source: 1
-      resolvedPath: C:\HTL-Kaindorf\4DHIF\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.collab-proxy@1.3.9
+      resolvedPath: C:\Users\Matthias\Desktop\Schule\4.Klasse\Game Programming\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.collab-proxy@1.3.9
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Unity Collaborate
@@ -652,7 +655,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: C:\HTL-Kaindorf\4DHIF\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.ide.rider@2.0.7
+      resolvedPath: C:\Users\Matthias\Desktop\Schule\4.Klasse\Game Programming\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.ide.rider@2.0.7
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -751,7 +754,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.5
       source: 1
-      resolvedPath: C:\HTL-Kaindorf\4DHIF\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.ide.visualstudio@2.0.5
+      resolvedPath: C:\Users\Matthias\Desktop\Schule\4.Klasse\Game Programming\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.ide.visualstudio@2.0.5
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -820,7 +823,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.2.3
       source: 1
-      resolvedPath: C:\HTL-Kaindorf\4DHIF\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.ide.vscode@1.2.3
+      resolvedPath: C:\Users\Matthias\Desktop\Schule\4.Klasse\Game Programming\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.ide.vscode@1.2.3
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
       displayName: Visual Studio Code Editor
@@ -889,7 +892,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.1.19
       source: 1
-      resolvedPath: C:\HTL-Kaindorf\4DHIF\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.test-framework@1.1.19
+      resolvedPath: C:\Users\Matthias\Desktop\Schule\4.Klasse\Game Programming\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.test-framework@1.1.19
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -976,7 +979,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.0.1
       source: 1
-      resolvedPath: C:\HTL-Kaindorf\4DHIF\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.textmeshpro@3.0.1
+      resolvedPath: C:\Users\Matthias\Desktop\Schule\4.Klasse\Game Programming\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.textmeshpro@3.0.1
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
       displayName: TextMeshPro
@@ -1123,7 +1126,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.4.4
       source: 1
-      resolvedPath: C:\HTL-Kaindorf\4DHIF\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.timeline@1.4.4
+      resolvedPath: C:\Users\Matthias\Desktop\Schule\4.Klasse\Game Programming\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.timeline@1.4.4
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -3089,7 +3092,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.5
       source: 1
-      resolvedPath: C:\HTL-Kaindorf\4DHIF\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.ext.nunit@1.0.5
+      resolvedPath: C:\Users\Matthias\Desktop\Schule\4.Klasse\Game Programming\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.ext.nunit@1.0.5
       assetPath: Packages/com.unity.ext.nunit
       name: com.unity.ext.nunit
       displayName: Custom NUnit
@@ -3140,7 +3143,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.1.0
       source: 1
-      resolvedPath: C:\HTL-Kaindorf\4DHIF\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.mathematics@1.1.0
+      resolvedPath: C:\Users\Matthias\Desktop\Schule\4.Klasse\Game Programming\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.mathematics@1.1.0
       assetPath: Packages/com.unity.mathematics
       name: com.unity.mathematics
       displayName: Mathematics
@@ -3191,7 +3194,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 4.0.3
       source: 1
-      resolvedPath: C:\HTL-Kaindorf\4DHIF\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.2d.common@4.0.3
+      resolvedPath: C:\Users\Matthias\Desktop\Schule\4.Klasse\Game Programming\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.2d.common@4.0.3
       assetPath: Packages/com.unity.2d.common
       name: com.unity.2d.common
       displayName: 2D Common
@@ -3258,7 +3261,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 4.0.1
       source: 1
-      resolvedPath: C:\HTL-Kaindorf\4DHIF\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.2d.path@4.0.1
+      resolvedPath: C:\Users\Matthias\Desktop\Schule\4.Klasse\Game Programming\Game-Programming-20-21\HorKaiJumpAndRun\Library\PackageCache\com.unity.2d.path@4.0.1
       assetPath: Packages/com.unity.2d.path
       name: com.unity.2d.path
       displayName: 2D Path
@@ -3305,5 +3308,5 @@ m_PackageAssets:
         path: 
   m_LocalPackages:
     m_LocalFileStatus: []
-m_ProjectPath: C:/HTL-Kaindorf/4DHIF/Game-Programming-20-21/HorKaiJumpAndRun/Packages
+m_ProjectPath: C:/Users/Matthias/Desktop/Schule/4.Klasse/Game Programming/Game-Programming-20-21/HorKaiJumpAndRun/Packages
 m_EditorVersion: 2020.2.1f1 (270dd8c3da1c)
